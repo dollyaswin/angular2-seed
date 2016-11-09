@@ -1,7 +1,7 @@
 #
 # Use this dockerfile to run Angular 2 application 
 # $ docker build -t angular2-seed .
-# $ docker run -d -p 3000:3000 --name angular2-seed angular2-seed:latest
+# $ docker run -d -p 3000:3000 --name angular2-seed -v $(pwd):/angular2-seed angular2-seed:latest
 #
 
 FROM ubuntu:xenial

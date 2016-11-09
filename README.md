@@ -7,7 +7,7 @@ To run this code just use [docker](https://www.docker.com/). Please type these c
 
 ```
 $ docker build -t angular2-seed .
-$ docker run -d -p 3000:3000 --name angular2-seed angular2-seed:latest
+$ docker run -d -p 3000:3000 --name angular2-seed -v $(pwd):/angular2-seed angular2-seed:latest
 ```
 
 Then open your browser and type this URL `http://localhost:3000`. You will see message “Loading…” for a second, followed by "**Hello Angular 2!**".
